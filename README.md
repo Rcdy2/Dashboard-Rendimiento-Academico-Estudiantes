@@ -4,7 +4,7 @@
 
 Este repositorio contiene un **dashboard interactivo en Excel** para el seguimiento y análisis del rendimiento académico de estudiantes. La herramienta permite visualizar métricas clave como total de estudiantes, porcentaje de asistencia, estudiantes aprobados y desaprobados, distribución de notas por curso y trimestre, y ranking de cursos con mejor y peor desempeño.
 
-![](img/Dashboard.png)
+![](img/Panel.png)
 
 ## Características Principales
 
