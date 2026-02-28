@@ -10,103 +10,68 @@ Este repositorio contiene un **dashboard interactivo en Excel** para el seguimie
 ## Características Principales
 
 - **Métricas Generales:**
-  - **Total de Estudiantes:** 29
-  - **% de Asistencia Promedio:** 61.02%
-  - **Estudiantes Aprobados:** 353
-  - **Estudiantes Desaprobados:** 343
+  - Total de Estudiantes
+  - % de Asistencia Promedio
+  - Estudiantes Aprobados
+  - Estudiantes Desaprobados: 
 
-- **Distribución de Notas:**
-  - AD (Logro destacado): 15 estudiantes
-  - A (Logro esperado): 338 estudiantes
-  - B (En proceso): 331 estudiantes
-  - C (En inicio): 12 estudiantes
+- **Notas:**
+  - AD (Logro destacado)
+  - A (Logro esperado)
+  - B (En proceso)
+  - C (En inicio)
 
 - **Análisis por Curso:**
-  - Promedio de asistencia por curso (Matemática 67.28%, Inglés 63.10%, Física 60.17%)
+  - Promedio de asistencia por curso
   - Cursos con más aprobados y desaprobados
-  - Rendimiento por curso (nota promedio en escala 0-3)
+  - Rendimiento por curso 
 
 - **Análisis por Trimestre:**
-  - Notas por trimestre (Tri-2 con 91 notas A, el más alto)
-  - Promedio de asistencia por trimestre (Tri-4 con 61.98%, el más alto)
+  - Notas por trimestre 
+  - Promedio de asistencia por trimestre
 
-- **Listado de Estudiantes:** Relación completa de 29 estudiantes con su desempeño por curso.
+- **Listado de Estudiantes:** Relación completa de todos los estudiantes con su desempeño por curso.
 
 ## Objetivo del Proyecto
-
 Crear una herramienta de **seguimiento académico** que permita a docentes, coordinadores y directivos visualizar rápidamente el rendimiento de los estudiantes, identificar cursos con dificultades, monitorear la asistencia y tomar decisiones para mejorar los resultados educativos.
 
 ## Objetivos del Proyecto
-
 - **Consolidar información académica:** Integrar datos de estudiantes, cursos, notas por trimestre y asistencia en un solo lugar.
 - **Visualizar métricas clave:** Mostrar de forma clara el panorama general del rendimiento estudiantil.
 - **Identificar áreas de mejora:** Detectar cursos con mayor número de desaprobados o baja asistencia.
 - **Facilitar el seguimiento individual:** Tener un listado completo de estudiantes para consultas rápidas.
 
 ## Insights Clave para el Negocio
-
 - **Casi la mitad de los estudiantes están en "B" (En proceso):** El 47.56% de las notas registradas son B, lo que indica que una gran parte de los estudiantes está cerca del nivel esperado pero necesita apoyo adicional para alcanzarlo.
-
 - **Matemática tiene la mejor asistencia pero no el mejor rendimiento:** Con 67.28% de asistencia (la más alta), Matemática tiene 51 aprobados, menos que otros cursos como Física (64 aprobados) con menor asistencia. Esto sugiere que **la asistencia no siempre garantiza el rendimiento**.
-
 - **Inglés destaca en asistencia y aprobados:** Tiene 63.10% de asistencia (segundo más alto) y 63 aprobados (segundo más alto), siendo uno de los cursos con mejor relación asistencia-rendimiento.
-
 - **El segundo trimestre es el de mejor rendimiento:** Con 91 notas A, el Tri-2 supera a los demás trimestres. Esto puede deberse a mayor motivación, mejores estrategias pedagógicas o contenidos más accesibles.
-
 - **Comunicación y Estadística tienen las asistencias más bajas:** Con 57.91% y 57.59% respectivamente, son los cursos con menor asistencia y también están entre los que tienen menos aprobados. Hay una **oportunidad de mejora en engagement y motivación** en estos cursos.
-
 - **4 cursos aprobados vs 2 desaprobados:** El rendimiento general es positivo (67% de cursos aprobados), pero los cursos desaprobados (posiblemente Comunicación y Estadística) requieren atención especial.
 
 ## Pasos Involucrados
-
 1. **Recopilar y organizar los datos:** Se consolidó la información de estudiantes por período, curso, notas (1-4), trabajos, promedio final, estado (aprobado/desaprobado) y porcentaje de asistencia.
-
 2. **Calcular métricas clave:** Se obtuvieron totales, promedios y distribuciones usando tablas dinámicas y fórmulas en Excel.
-
 3. **Crear visualizaciones:** Se diseñaron tablas y gráficos para mostrar:
    - Resumen general (estudiantes, asistencia, aprobados/desaprobados)
    - Distribución de notas por letra (AD, A, B, C)
    - Promedio de asistencia por curso y trimestre
    - Ranking de cursos con más aprobados y desaprobados
    - Listado completo de estudiantes
-
 4. **Validar la información:** Se revisó que los datos fueran consistentes y reflejaran la realidad académica.
 
 ## Habilidades Demostradas
-
 - **Análisis de datos educativos:** Interpretación de métricas de rendimiento y asistencia para tomar decisiones pedagógicas.
 - **Manejo de Excel:** Tablas dinámicas, fórmulas de conteo y promedio, formato condicional.
 - **Visualización de información:** Diseño claro de tablas y gráficos para facilitar la lectura de datos académicos.
 - **Seguimiento académico:** Capacidad para monitorear el progreso de estudiantes y cursos a lo largo del tiempo.
 
 ## Funciones y Técnicas Utilizadas
-
 - **Tablas dinámicas:** Para resumir estudiantes por nota, curso, trimestre y estado (aprobado/desaprobado).
 - **Fórmulas de conteo y promedio:** `CONTAR`, `CONTAR.SI`, `PROMEDIO`, `PROMEDIO.SI` para calcular métricas clave.
 - **Formato condicional:** Para resaltar visualmente los valores más altos y más bajos en asistencias y notas.
 - **Segmentación de datos:** Organización de la información por trimestre, curso y estado para análisis específicos.
 - **Escala de notas:** Conversión de notas numéricas a letras (AD, A, B, C) según el rendimiento.
 
-## Estructura de Datos
-
-La base de datos contiene la siguiente información por registro:
-
-| Campo | Descripción | Ejemplo |
-|-------|-------------|---------|
-| # de Orden | Identificador único | E1 |
-| Periodo | Trimestre | Tri - 1 |
-| Apellidos y Nombres | Nombre completo del estudiante | RODRIGUEZ RAMIREZ, María Diana |
-| Cursos | Asignatura | Matemática |
-| Nota 1-4 | Calificaciones por período | 1, 2, 2, 1 |
-| Trabajos | Nota de trabajos | 1 |
-| Promedio Final | Promedio calculado | 1.4 |
-| Redondear | Promedio redondeado | 1 |
-| Nota | Nota en letras | B |
-| Estado | Aprobado / Desaprobado | Desaprobado |
-| %Asistencia | Porcentaje de asistencia | 95% |
-| Nota en Letras | Escala AD, A, B, C | B |
-
-## Empezando
-
-```bash
-git clone https://github.com/tuusuario/Dashboard-Rendimiento-Academico-Estudiantes.git
+## Conclusión
+Este dashboard académico permite a instituciones educativas tener una visión clara y rápida del rendimiento de sus estudiantes. Con métricas de aprobación, asistencia y distribución de notas por curso y trimestre, los docentes y directivos pueden identificar oportunidades de mejora, enfocar recursos en los cursos con más dificultades y hacer seguimiento personalizado a cada estudiante.
